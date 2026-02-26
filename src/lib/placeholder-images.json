@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "A professional profile picture of Pedapudi Surya Teja.",
+      "imageUrl": "https://picsum.photos/seed/surya/400/400",
+      "imageHint": "profile picture"
+    },
+    {
+      "id": "web-design-service",
+      "description": "Abstract image representing web design.",
+      "imageUrl": "https://picsum.photos/seed/webdesign/600/400",
+      "imageHint": "web design"
+    },
+    {
+      "id": "python-dev-service",
+      "description": "Abstract image representing python development.",
+      "imageUrl": "https://picsum.photos/seed/pythondev/600/400",
+      "imageHint": "python code"
+    },
+    {
+      "id": "portfolio-service",
+      "description": "Abstract image representing portfolio creation.",
+      "imageUrl": "https://picsum.photos/seed/portfolio/600/400",
+      "imageHint": "portfolio"
+    },
+    {
+      "id": "web-intern-project",
+      "description": "Image for web development internship project.",
+      "imageUrl": "https://picsum.photos/seed/webintern/600/400",
+      "imageHint": "web development"
+    }
+  ]
+}
