@@ -167,7 +167,7 @@ export function GlowCard({
       whileHover={{
         scale: 1.02,
         boxShadow:
-          "0 0 30px rgba(124, 92, 191, 0.3), 0 0 60px rgba(124, 92, 191, 0.1)",
+          "0 0 30px rgba(6, 182, 212, 0.3), 0 0 60px rgba(139, 92, 246, 0.1)",
       }}
       transition={{ duration: 0.3 }}
       className={className}

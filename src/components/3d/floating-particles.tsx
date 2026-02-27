@@ -14,11 +14,11 @@ function Particles() {
     const col = new Float32Array(count * 3);
 
     const palette = [
-      new THREE.Color("#7c5cbf"),
-      new THREE.Color("#06b6d4"),
-      new THREE.Color("#d946ef"),
-      new THREE.Color("#a78bfa"),
-      new THREE.Color("#38bdf8"),
+      new THREE.Color("#06b6d4"), // Cyan
+      new THREE.Color("#8b5cf6"), // Violet
+      new THREE.Color("#10b981"), // Emerald
+      new THREE.Color("#3b82f6"), // Blue
+      new THREE.Color("#6366f1"), // Indigo
     ];
 
     for (let i = 0; i < count; i++) {

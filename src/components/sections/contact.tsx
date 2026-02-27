@@ -79,7 +79,7 @@ export default function ContactSection() {
         <AnimatedText>
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             Get in{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-gradient">
               Touch
             </span>
           </h2>

@@ -46,7 +46,7 @@ export default function HeroSection() {
 
           <AnimatedText delay={0.1}>
             <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              <span className="block mt-1 bg-gradient-to-r from-primary via-accent to-purple-400 bg-clip-text text-transparent">
+              <span className="block mt-1 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Surya Teja
               </span>
             </h1>
@@ -107,8 +107,8 @@ export default function HeroSection() {
               className="relative"
             >
               {/* Glow ring behind profile */}
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-primary/30 via-accent/30 to-purple-500/30 blur-xl animate-pulse" />
-              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary/20 via-accent/20 to-purple-400/20 blur-md" />
+              <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-primary/30 via-secondary/30 to-accent/30 blur-xl animate-pulse" />
+              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 blur-md" />
 
               {profileImage && (
                 <Image

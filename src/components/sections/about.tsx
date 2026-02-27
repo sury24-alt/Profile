@@ -54,7 +54,7 @@ export default function AboutSection() {
         <AnimatedText>
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             About{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-gradient">
               Me
             </span>
           </h2>

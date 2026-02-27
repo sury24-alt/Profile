@@ -10,32 +10,48 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Inter", "sans-serif"],
-        headline: ["Poppins", "sans-serif"],
+        body: ["var(--font-outfit)", "var(--font-inter)", "sans-serif"],
+        headline: ["var(--font-syne)", "var(--font-space-grotesk)", "sans-serif"], // Switch to a techy font
       },
       colors: {
-        background: "#272B36",
-        foreground: "#FFFFFF",
+        background: "#030712", // Very dark gray, almost absolute black
+        foreground: "#f8fafc", // Crisp white/blueish tint
         card: {
-          DEFAULT: "#2F3340",
+          DEFAULT: "rgba(15, 23, 42, 0.4)", // Slate 900 translucent
         },
         primary: {
-          DEFAULT: "#FF7A7A", // Coral
+          DEFAULT: "#06b6d4", // Cyan
         },
         secondary: {
-          DEFAULT: "#695EE6", // Purple
+          DEFAULT: "#8b5cf6", // Violet
         },
         accent: {
-          DEFAULT: "#C685D6", // Pink/Purple for borders
+          DEFAULT: "#10b981", // Emerald Green for ML connotations
         },
         muted: {
-          DEFAULT: "#3E4352", // Darker gray for buttons
-          foreground: "rgba(255, 255, 255, 0.588)",
+          DEFAULT: "#1e293b", // Slate 800
+          foreground: "#94a3b8", // Slate 400
         },
-        border: "#C685D6",
+        border: "rgba(51, 65, 85, 0.5)", // Subtle gray
       },
       backgroundImage: {
-        "gradient-text": "linear-gradient(45deg, #695EE6 0%, #FF7A7A 85%)",
+        "gradient-text": "linear-gradient(90deg, #06b6d4 0%, #8b5cf6 50%, #10b981 100%)",
+      },
+      keyframes: {
+        blob: {
+          "0%": { transform: "translate(0px, 0px) scale(1)" },
+          "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+          "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+          "100%": { transform: "translate(0px, 0px) scale(1)" },
+        },
+        trail: {
+          "0%": { transform: "scale(1)", opacity: "0.8" },
+          "100%": { transform: "scale(0)", opacity: "0" },
+        },
+      },
+      animation: {
+        blob: "blob 7s infinite",
+        trail: "trail 1s forwards",
       },
     },
   },
