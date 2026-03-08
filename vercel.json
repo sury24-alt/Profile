@@ -2,14 +2,5 @@
     "buildCommand": null,
     "outputDirectory": ".",
     "framework": null,
-    "rewrites": [
-        {
-            "source": "/desktop",
-            "destination": "/desktop.html"
-        },
-        {
-            "source": "/mobile",
-            "destination": "/mobile.html"
-        }
-    ]
+    "cleanUrls": true
 }
