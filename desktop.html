@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SURYA TEJA — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Barlow+Condensed:wght@300;400;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/desktop.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <canvas id="pre-canvas"></canvas>
+    <div class="pre-content">
+      <div class="pre-title"><span class="lit">SURYA</span> TEJA</div>
+      <div class="pre-sub">Initializing AI Portfolio System</div>
+      <div class="pre-bar-wrap">
+        <div class="pre-bar" id="preBar"></div>
+      </div>
+      <div class="pre-pct" id="prePct">0%</div>
+    </div>
+    <div class="pre-flash" id="preFlash"></div>
+  </div>
+
+  <!-- LETTERBOX -->
+  <div class="lb" id="lb-top"></div>
+  <div class="lb" id="lb-bot"></div>
+
+  <!-- OVERLAYS -->
+  <div id="grain"></div>
+  <div id="vignette"></div>
+  <canvas id="stream-canvas"></canvas>
+
+  <!-- CURSOR -->
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">ST<span>//</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#badges">Credentials</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="index.html" class="nav-switch">⇄ Switch View</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="three-canvas"></canvas>
+    <div class="hero-ambient">
+      <div class="ha-blob ha1"></div>
+      <div class="ha-blob ha2"></div>
+      <div class="ha-blob ha3"></div>
+    </div>
+    <div class="flare flare-main"></div>
+    <div class="flare flare-streak"></div>
+    <div class="flare flare-dot"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Specializing in Generative AI &amp; Machine Learning</div>
+      <h1 class="hero-name">
+        <span class="chr name-line1" data-t="PEDAPUDI">PEDAPUDI</span><br>
+        <span class="chr name-line2" data-t="SURYA TEJA">SURYA TEJA</span>
+      </h1>
+      <p class="hero-sub">
+        Pursuing B.Tech at <strong>MLRITM</strong>,<br>
+        <strong>Generative AI</strong> &amp; Machine Learning Engineer
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-mag btn-prim" data-mag>View My Work</a>
+        <a href="mailto:suryapedapudi2404@gmail.com" class="btn-mag btn-out" data-mag>Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hs-line"></div>
+      <span class="hs-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="reveal">
+      <div class="sec-label">01 — Identity</div>
+      <h2 class="sec-title">The Mind<br><span class="accent">Behind</span> The Machine</h2>
+    </div>
+    <div class="about-grid">
+      <div class="photo-outer reveal">
+        <div class="photo-frame">
+          <img src="images/surya.jpg" alt="Surya Teja" />
+          <div class="photo-scan"></div>
+        </div>
+        <div class="photo-border-v"></div>
+        <div class="photo-border-v2"></div>
+        <div class="photo-corner pc-tl"></div>
+        <div class="photo-corner pc-br"></div>
+        <div class="photo-corner pc-tr"></div>
+        <div class="photo-corner pc-bl"></div>
+      </div>
+      <div class="about-text reveal">
+        <p>I am a <strong>passionate AI & ML student</strong> pursuing my B.Tech at Marri Laxman Reddy Institute of
+          Technology and Management, working hard to master the rigorous R22 academic regulations.</p>
+        <p>My journey is focused on building the future with <strong>Generative AI</strong>. I love exploring neural
+          networks, deploying large language models, and creating robust, scalable AI solutions that solve real-world
+          problems.</p>
+        <p>I bridge the gap between <strong>complex algorithms and beautifully functional user interfaces</strong>,
+          finding the perfect synergy between code and creativity.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">HTML5/CSS/JS</span>
+          <span class="skill-tag">Generative AI</span>
+        </div>
+      </div>
+    </div>
+    <div class="stats-row reveal">
+      <div class="stat"><span class="stat-n">5+</span><span class="stat-l">Cloud Badges</span></div>
+      <div class="stat"><span class="stat-n">GEN</span><span class="stat-l">AI Specialist</span></div>
+      <div class="stat"><span class="stat-n">∞</span><span class="stat-l">Curiosity Level</span></div>
+      <div class="stat"><span class="stat-n">24/7</span><span class="stat-l">Always Building</span></div>
+    </div>
+  </section>
+
+  <!-- BADGES -->
+  <section id="badges">
+    <div class="reveal">
+      <div class="sec-label">02 — Credentials</div>
+      <h2 class="sec-title">Google Cloud <span class="accent2">Verified</span></h2>
+    </div>
+    <div class="badges-grid">
+      <div class="badge-card reveal">
+        <div class="badge-hex">🧠</div>
+        <div class="badge-vfy"><span class="vfy-dot"></span>Verified</div>
+        <div class="badge-name">Introduction to Generative AI</div>
+        <div class="badge-meta">Google Cloud · 2025</div>
+      </div>
+      <div class="badge-card reveal">
+        <div class="badge-hex">🤖</div>
+        <div class="badge-vfy"><span class="vfy-dot"></span>Verified</div>
+        <div class="badge-name">Introduction to Large Language Models</div>
+        <div class="badge-meta">Google Cloud · 2025</div>
+      </div>
+      <div class="badge-card reveal">
+        <div class="badge-hex">⚖️</div>
+        <div class="badge-vfy"><span class="vfy-dot"></span>Verified</div>
+        <div class="badge-name">Introduction to Responsible AI</div>
+        <div class="badge-meta">Google Cloud · 2025</div>
+      </div>
+      <div class="badge-card reveal">
+        <div class="badge-hex">⚡</div>
+        <div class="badge-vfy"><span class="vfy-dot"></span>Verified</div>
+        <div class="badge-name">Generative AI with Vertex AI</div>
+        <div class="badge-meta">Google Cloud · 2025</div>
+      </div>
+      <div class="badge-card reveal">
+        <div class="badge-hex">✍️</div>
+        <div class="badge-vfy"><span class="vfy-dot"></span>Verified</div>
+        <div class="badge-name">Prompt Design in Vertex AI</div>
+        <div class="badge-meta">Google Cloud · 2025</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="reveal">
+      <div class="sec-label">03 — Work</div>
+      <h2 class="sec-title">Project <span class="accent">Showcase</span></h2>
+    </div>
+    <div class="proj-list reveal">
+      <div class="proj-row" onclick="window.open('https://v0-aifoood.vercel.app/','_blank')" style="cursor:pointer">
+        <div class="proj-num">01</div>
+        <div class="proj-info">
+          <h3>AI Food Web App</h3>
+          <p>A comprehensive AI-powered meal planning and nutrition assistant built with Generative AI.</p>
+          <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">GenAI</span><span
+              class="ptag">Web</span><span class="ptag">NLP</span></div>
+        </div>
+        <a href="https://v0-aifoood.vercel.app/" target="_blank" class="proj-arrow">→</a>
+      </div>
+      <div class="proj-row coming">
+        <div class="proj-num">02</div>
+        <div class="proj-info">
+          <h3>More GenAI Projects</h3>
+          <p>Working on advanced RAG models and NLP tasks. Coming soon.</p>
+          <div class="proj-tags"><span class="ptag">RAG</span><span class="ptag">NLP</span><span class="ptag">Coming
+              Soon</span></div>
+        </div>
+        <div class="proj-arrow">→</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIZ STRIP -->
+  <div class="viz-strip" id="vizStrip"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <canvas id="vortex-canvas"></canvas>
+    <div class="contact-inner reveal">
+      <div class="sec-label">04 — Connect</div>
+      <h2 class="sec-title">Let's <span class="accent">Build</span> the Future</h2>
+      <p class="contact-sub">Have a unique idea or looking for an AI collaborator? Let's talk.</p>
+      <a href="mailto:suryapedapudi2404@gmail.com" class="btn-mag btn-prim" data-mag>Send a Message</a>
+      <div class="contact-links">
+        <a href="https://github.com/sury24-alt" target="_blank" class="c-link">⌥ GitHub</a>
+        <a href="mailto:suryapedapudi2404@gmail.com" class="c-link">✉ Email</a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/YOUR_PROFILE" target="_blank" class="c-link">◈
+          Cloud Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 <span class="f-accent">Pedapudi Surya Teja</span></span>
+    <span>Specializing in Generative AI &amp; Machine Learning</span>
+  </footer>
+
+  <script src="js/desktop.js"></script>
+</body>
+
+</html>

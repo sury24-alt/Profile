@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SURYA TEJA — Choose Your Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Barlow+Condensed:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+  <canvas id="bg"></canvas>
+  <div id="grain"></div>
+  <div id="vig"></div>
+  <div id="scan"></div>
+  <div id="transition"></div>
+
+  <div class="corner c-tl"></div>
+  <div class="corner c-tr"></div>
+  <div class="corner c-bl"></div>
+  <div class="corner c-br"></div>
+
+  <div class="wrapper">
+    <div class="top-label">Select Your Experience</div>
+
+    <div class="main-title">
+      <h1><span>SURYA</span> TEJA</h1>
+      <p>AI &amp; Generative AI Engineer · Portfolio 2025</p>
+    </div>
+
+    <div class="divider">
+      <div class="div-line"></div>
+      <div class="div-text">Choose Platform</div>
+      <div class="div-line r"></div>
+    </div>
+
+    <div class="cards">
+      <!-- DESKTOP CARD -->
+      <a class="card" href="desktop.html" id="dCard">
+        <div class="device-icon">
+          <div class="icon-glow"></div>
+          <div style="position:relative;padding-bottom:22px">
+            <div class="monitor">
+              <div class="m-screen"></div>
+              <div class="m-blink"></div>
+            </div>
+            <div class="m-stand"></div>
+          </div>
+        </div>
+        <div class="card-label">
+          <h2>DESKTOP</h2>
+          <p>Full 3D AI Brain<br>Cinematic FX · Particles</p>
+          <div class="card-badge">⌖ Full Experience</div>
+        </div>
+      </a>
+
+      <!-- MOBILE CARD -->
+      <a class="card mob" href="mobile.html" id="mCard">
+        <div class="device-icon">
+          <div class="icon-glow pink-glow"></div>
+          <div class="phone">
+            <div class="p-screen"></div>
+            <div class="p-home"></div>
+            <div class="p-notch"></div>
+            <div class="p-blink"></div>
+          </div>
+        </div>
+        <div class="card-label">
+          <h2>MOBILE</h2>
+          <p>Touch Optimized<br>Fast · Clean · Sleek</p>
+          <div class="card-badge">⌗ Mobile View</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="auto-detect" id="autoMsg"></div>
+  </div>
+
+  <div class="status-bar">
+    <div class="si"><div class="sd"></div>System Online</div>
+    <div class="si"><div class="sd violet"></div>Portfolio v2.0</div>
+    <div class="si"><div class="sd pink"></div>2025</div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
