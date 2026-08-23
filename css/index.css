@@ -1,0 +1,229 @@
+/* ==========================================================================
+   INDEX.CSS — Spatial Launcher & Platform Selector
+   Surya Teja Portfolio
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-deep: #06080e;
+  --bg-darker: #030407;
+  --bg-surface: rgba(13, 17, 27, 0.7);
+  --bg-glass-card: rgba(15, 23, 42, 0.6);
+  --bg-glass-hover: rgba(26, 38, 66, 0.8);
+
+  --aura-cyan: #00f2fe;
+  --aura-emerald: #10b981;
+  --aura-violet: #8b5cf6;
+  --aura-magenta: #ec4899;
+  --aura-blue: #3b82f6;
+
+  --text-primary: #f8fafc;
+  --text-secondary: rgba(241, 245, 249, 0.75);
+  --text-muted: rgba(148, 163, 184, 0.6);
+
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(16px) saturate(180%);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: none;
+}
+
+/* ── CURSOR ── */
+#cur {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--aura-cyan);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px var(--aura-cyan);
+  transition: transform 0.12s;
+}
+
+#cur-ring {
+  position: fixed;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(0, 242, 254, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-color 0.3s;
+}
+
+#bg { position: fixed; inset: 0; z-index: 0; }
+
+#grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.025;
+}
+
+#vig {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 45%, rgba(3, 4, 7, 0.88) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+#transition {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-darker);
+  z-index: 9000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#transition.go { opacity: 1; pointer-events: all; }
+
+/* ── WRAPPER ── */
+.wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+  padding: 2rem;
+}
+
+.top-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  color: var(--aura-cyan);
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  background: rgba(0, 242, 254, 0.08);
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  border-radius: 9999px;
+}
+
+.main-title { text-align: center; }
+.main-title h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.4rem, 6.5vw, 4.8rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #fff;
+}
+.main-title h1 span {
+  background: linear-gradient(135deg, var(--aura-cyan), var(--aura-violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-title p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 270px;
+  height: 340px;
+  border: var(--glass-border);
+  background: var(--bg-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-radius: 28px;
+  cursor: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2.5rem 2rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  border-color: rgba(0, 242, 254, 0.45);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(0, 242, 254, 0.2);
+  background: var(--bg-glass-hover);
+}
+
+.card-label h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.card-label p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.card-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--aura-cyan);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  background: rgba(0, 242, 254, 0.08);
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  margin-top: 0.8rem;
+  display: inline-block;
+}
+
+.auto-detect {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.auto-detect span { color: var(--aura-cyan); }
+
+@media (max-width: 600px) {
+  body { cursor: auto; }
+  #cur, #cur-ring { display: none; }
+  .cards { gap: 1rem; }
+  .card { width: 230px; height: 300px; }
+}

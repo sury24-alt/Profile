@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SURYA TEJA — AI &amp; Web Developer | Monochrome Obsidian Glass</title>
+  <meta name="description" content="Personal portfolio of Pedapudi Surya Teja — AI & Web Developer specializing in Generative AI, Python, and modern web platforms. Featuring Monochrome Obsidian & Slate Grey Glassmorphism." />
+  
+  <!-- Preconnect & Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="css/desktop.css" />
+</head>
+
+<body>
+
+  <!-- AMBIENT GLOWING GRADIENT ORBS (Monochrome Slate-Grey & Cool Zinc) -->
+  <div class="ambient-orbs-container" aria-hidden="true">
+    <div class="orb orb-top-right"></div>
+    <div class="orb orb-bottom-left"></div>
+    <div class="orb orb-center-mid"></div>
+  </div>
+
+  <!-- AMBIENT GRID OVERLAY -->
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <!-- SINGLE-PAGE APP CONTAINER -->
+  <div class="app-container">
+
+    <!-- FLOATING GLASS DOCK HEADER -->
+    <header class="floating-dock-header" role="banner">
+      <a href="#about" class="brand-badge" aria-label="Surya Teja Portfolio Home">
+        <div class="brand-logo-gem">ST</div>
+        <div class="brand-meta">
+          <span class="brand-name">SURYA TEJA</span>
+          <span class="brand-title">AI &amp; WEB DEV</span>
+        </div>
+      </a>
+
+      <!-- Navigation Dock with Playful Emojis -->
+      <nav class="dock-nav-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="dock-nav-list">
+          <li><a href="#about" class="dock-link active"><span>🤓</span> Who Am I?</a></li>
+          <li><a href="#projects" class="dock-link"><span>🛠️</span> Stuff That Works</a></li>
+          <li><a href="#contact" class="dock-link"><span>🛸</span> Say Hi</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions Group (Theme Toggle + Resume Trigger + CTA) -->
+      <div class="dock-actions-group">
+        <!-- Dynamic Theme Toggle -->
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" title="Switch Theme" aria-label="Switch Theme">
+          ☀️
+        </button>
+
+        <!-- Resume Modal Trigger Button in Dock -->
+        <button type="button" class="dock-btn-resume" id="openResumeDockBtn" aria-label="Open Resume Preview">
+          <span>📄</span>
+          <span>Resume</span>
+        </button>
+
+        <!-- Contact CTA -->
+        <a href="#contact" class="dock-cta-btn">
+          <span>Let's Talk</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
+
+      <!-- ===================================================================
+           SECTION 01: ABOUT ME (🤓 Who Am I? & ☕ Fuel & Stack)
+           =================================================================== -->
+      <section id="about" class="about-hero-section" aria-labelledby="about-heading">
+        
+        <!-- Left Column: Bio & What I Do (Staggered Float 1) -->
+        <article class="glass-card float-stagger-1">
+          
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div class="section-pill-tag" style="margin-bottom: 0;">
+              <span>🤓</span>
+              <span>WHO AM I?</span>
+            </div>
+            
+            <!-- Open for Freelance & Contribution Status -->
+            <div class="status-badge-pill">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Open for Freelance &amp; Contribution</span>
+            </div>
+          </div>
+
+          <h1 id="about-heading" class="hero-main-title">
+            Turning Ideas into <span class="gradient-accent">Intelligent</span> Code &amp; Web Apps.
+          </h1>
+
+          <p class="hero-bio-lead">
+            Hey! I'm <strong>Pedapudi Surya Teja</strong>, an AI &amp; Web Developer pursuing B.Tech in <strong>Artificial Intelligence and Machine Learning</strong> at Marri Laxman Reddy Institute of Technology and Management (2023–2027). I build practical software solutions, generative AI platforms, and clean web applications.
+          </p>
+
+          <!-- Focus Areas Grid -->
+          <div class="focus-areas-grid">
+            <div class="focus-area-item">
+              <span class="focus-icon" aria-hidden="true">🔮</span>
+              <div class="focus-text">
+                <h4>Generative AI &amp; LLMs</h4>
+                <p>Prompt engineering, LLM API integration &amp; evaluation</p>
+              </div>
+            </div>
+
+            <div class="focus-area-item">
+              <span class="focus-icon" aria-hidden="true">💻</span>
+              <div class="focus-text">
+                <h4>Modern Web Dev</h4>
+                <p>Fast, responsive apps in React, JavaScript &amp; Tailwind</p>
+              </div>
+            </div>
+
+            <div class="focus-area-item">
+              <span class="focus-icon" aria-hidden="true">🐍</span>
+              <div class="focus-text">
+                <h4>Python Engineering</h4>
+                <p>Streamlit utilities, structured text parsing &amp; backend scripts</p>
+              </div>
+            </div>
+
+            <div class="focus-area-item">
+              <span class="focus-icon" aria-hidden="true">🧩</span>
+              <div class="focus-text">
+                <h4>Problem Solving</h4>
+                <p>Translating complex requirements into simple solutions</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Cluster -->
+          <div class="hero-action-buttons">
+            <a href="#projects" class="btn-primary-glow">
+              <span>🛠️ See My Work</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a href="#contact" class="btn-secondary-glass">
+              <span>🛸 Say Hi</span>
+              <span aria-hidden="true">✉</span>
+            </a>
+          </div>
+
+          <!-- MONOCHROME OBSIDIAN RESUME ACTION BLOCK -->
+          <div class="resume-action-card" id="resumeActionCard">
+            <div class="resume-info-block">
+              <span class="resume-doc-icon" aria-hidden="true">📄</span>
+              <div class="resume-title-wrap">
+                <h4>Official Resume</h4>
+                <p>Pedapudi Surya Teja · PDF Document</p>
+              </div>
+            </div>
+
+            <div class="resume-dual-triggers">
+              <!-- View Button (Peek at Resume) -->
+              <button type="button" class="btn-resume-view" id="openResumeActionBtn" aria-label="Peek at Resume in Modal">
+                <span>👀</span>
+                <span>Peek at Resume</span>
+              </button>
+
+              <!-- Download Button (Grab the PDF) in Solid Monochrome Gradient -->
+              <a href="Pedapudi_Surya_Teja_Resume.pdf?v=20260823" download="Resume.pdf" class="btn-resume-download" aria-label="Grab the PDF">
+                <span>📥</span>
+                <span>Grab the PDF</span>
+              </a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- Right Column: Profile & ☕ Fuel & Stack (Staggered Float 2) -->
+        <aside class="glass-card profile-telemetry-card float-stagger-2">
+          <div>
+            <div class="profile-visual-header">
+              <div class="avatar-frame">
+                <img src="images/surya.jpg" alt="Pedapudi Surya Teja Portrait" />
+              </div>
+              <div class="profile-title-block">
+                <h3>Surya Teja ✨</h3>
+                <p>AI &amp; Web Developer</p>
+                <span>MLRITM · B.Tech (AI &amp; ML) 2023–2027</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <h4 class="skills-block-title">
+                <span aria-hidden="true">☕</span> Fuel &amp; Stack
+              </h4>
+              <div class="tech-badges-cluster">
+                <span class="tech-badge">🐍 Python</span>
+                <span class="tech-badge">⚡ JavaScript</span>
+                <span class="tech-badge">🌐 HTML5 / CSS3</span>
+                <span class="tech-badge">🔮 Generative AI</span>
+                <span class="tech-badge">🤖 LLM APIs</span>
+                <span class="tech-badge">🎈 Streamlit</span>
+                <span class="tech-badge">⚛️ React &amp; Next.js</span>
+                <span class="tech-badge">🎨 Tailwind CSS</span>
+                <span class="tech-badge">🐙 Git &amp; Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Metrics Row -->
+          <div class="metrics-row">
+            <div class="metric-item">
+              <span class="metric-number">3+</span>
+              <span class="metric-label">🚀 Live Projects</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">⚡ Fast &amp; Zero Delay</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">24/7</span>
+              <span class="metric-label">💡 Always Learning</span>
+            </div>
+          </div>
+        </aside>
+
+      </section>
+
+      <!-- ===================================================================
+           SECTION 02: PROJECTS (🛠️ Stuff That Actually Works)
+           =================================================================== -->
+      <section id="projects" class="section-wrapper" style="margin-top: 4rem;" aria-labelledby="projects-heading">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="section-pill-tag">
+              <span>🛠️</span>
+              <span>PROJECTS</span>
+            </div>
+            <h2 id="projects-heading" class="section-header-title">
+              <span>🛠️</span> Stuff That <span class="accent">Actually Works</span>
+            </h2>
+          </div>
+          <p class="section-subtitle">Real apps deployed in production. Click live links to try them out.</p>
+        </div>
+
+        <div class="bento-projects-grid">
+          
+          <!-- Project 01: AI Resume Analyzer (Span 7 / Staggered Float 1) -->
+          <article class="bento-card bento-span-7 float-stagger-1">
+            <div>
+              <div class="bento-card-top">
+                <span class="bento-proj-number"><span>📄</span> PROJ // 01</span>
+                <span class="bento-status-pill">● LIVE IN PRODUCTION</span>
+              </div>
+              <h3 class="bento-title"><span>📄</span> AI Resume Analyzer</h3>
+              <p class="bento-desc">
+                An AI-powered resume analysis utility built with Streamlit and modern Generative AI SDK. Evaluates resume compliance against job requirements, extracts structured text, and delivers context-aware feedback to identify skill gaps.
+              </p>
+              <div class="bento-tech-row">
+                <span class="bento-tech-pill">Python</span>
+                <span class="bento-tech-pill">Streamlit</span>
+                <span class="bento-tech-pill">Generative AI SDK</span>
+                <span class="bento-tech-pill">NLP Parsing</span>
+                <span class="bento-tech-pill">Vercel</span>
+              </div>
+            </div>
+            <div class="bento-actions-row">
+              <a href="https://resume-analyzer-beryl-rho.vercel.app/" target="_blank" rel="noopener noreferrer" class="bento-btn-live">
+                <span>Launch Live App</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://github.com/sury24-alt" target="_blank" rel="noopener noreferrer" class="bento-btn-git">
+                <span>View GitHub</span>
+                <span aria-hidden="true">⌥</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02: Prompt Forge AI (Span 5 / Staggered Float 3) -->
+          <article class="bento-card bento-span-5 float-stagger-3">
+            <div>
+              <div class="bento-card-top">
+                <span class="bento-proj-number"><span>⚙️</span> PROJ // 02</span>
+                <span class="bento-status-pill">● LIVE IN PRODUCTION</span>
+              </div>
+              <h3 class="bento-title"><span>⚙️</span> Prompt Forge AI</h3>
+              <p class="bento-desc">
+                An interactive web studio tailored for prompt engineering and optimization. Integrates Large Language Model APIs to convert unstructured requirements into high-fidelity production prompts.
+              </p>
+              <div class="bento-tech-row">
+                <span class="bento-tech-pill">TypeScript</span>
+                <span class="bento-tech-pill">React</span>
+                <span class="bento-tech-pill">Tailwind CSS</span>
+                <span class="bento-tech-pill">LLM APIs</span>
+                <span class="bento-tech-pill">Vercel</span>
+              </div>
+            </div>
+            <div class="bento-actions-row">
+              <a href="https://prompt-forge-ai-wine.vercel.app/" target="_blank" rel="noopener noreferrer" class="bento-btn-live">
+                <span>Launch Live App</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://github.com/sury24-alt" target="_blank" rel="noopener noreferrer" class="bento-btn-git">
+                <span>View GitHub</span>
+                <span aria-hidden="true">⌥</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03: AI Food Web App (Span 6 / Staggered Float 2) -->
+          <article class="bento-card bento-span-6 float-stagger-2">
+            <div>
+              <div class="bento-card-top">
+                <span class="bento-proj-number"><span>🥗</span> PROJ // 03</span>
+                <span class="bento-status-pill">● LIVE IN PRODUCTION</span>
+              </div>
+              <h3 class="bento-title"><span>🥗</span> AI Food Web App</h3>
+              <p class="bento-desc">
+                A personalized nutrition intelligence and meal planning web application using generative AI pipelines and tailored dietary algorithms for smart food synthesis.
+              </p>
+              <div class="bento-tech-row">
+                <span class="bento-tech-pill">Python</span>
+                <span class="bento-tech-pill">Generative AI</span>
+                <span class="bento-tech-pill">NLP</span>
+                <span class="bento-tech-pill">Vercel</span>
+              </div>
+            </div>
+            <div class="bento-actions-row">
+              <a href="https://v0-aifoood.vercel.app/" target="_blank" rel="noopener noreferrer" class="bento-btn-live">
+                <span>Launch Live App</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://github.com/sury24-alt" target="_blank" rel="noopener noreferrer" class="bento-btn-git">
+                <span>View GitHub</span>
+                <span aria-hidden="true">⌥</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04: Open Source & Research Lab (Span 6 / Staggered Float 4) -->
+          <article class="bento-card bento-span-6 float-stagger-4">
+            <div>
+              <div class="bento-card-top">
+                <span class="bento-proj-number"><span>🔬</span> LAB // 04</span>
+                <span class="bento-status-pill" style="color: var(--zinc-300); background: var(--glass-bg-subtle); border-color: var(--glass-border);">● ACTIVE WORK</span>
+              </div>
+              <h3 class="bento-title"><span>🔬</span> Multi-Agent &amp; AI Explorations</h3>
+              <p class="bento-desc">
+                Continuous open-source contributions, autonomous agent workflows, vector embeddings, and web application experiments on GitHub.
+              </p>
+              <div class="bento-tech-row">
+                <span class="bento-tech-pill">Python</span>
+                <span class="bento-tech-pill">JavaScript</span>
+                <span class="bento-tech-pill">GenAI</span>
+                <span class="bento-tech-pill">Open Source</span>
+              </div>
+            </div>
+            <div class="bento-actions-row">
+              <a href="https://github.com/sury24-alt" target="_blank" rel="noopener noreferrer" class="bento-btn-live" style="background: var(--glass-bg-subtle); border-color: var(--glass-border);">
+                <span>Explore GitHub Repos</span>
+                <span aria-hidden="true">⌥</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SECTION 03: CONTACT (🛸 Say Hi (I Don't Bite))
+           =================================================================== -->
+      <section id="contact" class="section-wrapper" style="margin-top: 4rem;" aria-labelledby="contact-heading">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="section-pill-tag">
+              <span>🛸</span>
+              <span>GET IN TOUCH</span>
+            </div>
+            <h2 id="contact-heading" class="section-header-title">
+              <span>🛸</span> Say Hi <span class="accent">(I Don't Bite)</span>
+            </h2>
+          </div>
+          <p class="section-subtitle">Got a project, freelance gig, or just want to chat about AI &amp; web dev?</p>
+        </div>
+
+        <div class="contact-grid-layout">
+          
+          <!-- Direct Action Cards & Socials (Staggered Float 1) -->
+          <article class="glass-card contact-main-card float-stagger-1">
+            <div>
+              <h3 class="contact-headline">
+                <span>💬</span> Let's build something <span class="accent-glow">awesome</span> together.
+              </h3>
+              <p class="contact-copy">
+                I am actively <strong>open for freelance projects and open-source contributions</strong>. Feel free to copy my direct email, call, or reach out via LinkedIn and GitHub.
+              </p>
+
+              <div class="direct-actions-stack">
+                <!-- Copy Email Action Box -->
+                <div class="copy-email-box" id="copyEmailTrigger" data-email="suryapedapudi2404@gmail.com" role="button" tabindex="0" aria-label="Click to copy email address">
+                  <div class="copy-email-left">
+                    <span class="email-icon" aria-hidden="true">✉️</span>
+                    <span class="email-address-text">suryapedapudi2404@gmail.com</span>
+                  </div>
+                  <span class="copy-trigger-badge">Click to Copy 📋</span>
+                </div>
+
+                <!-- Social Handles Ecosystem -->
+                <div class="social-pills-row">
+                  <a href="https://linkedin.com/in/suryapedapudi" target="_blank" rel="noopener noreferrer" class="social-pill-link">
+                    <span aria-hidden="true">💼</span>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/sury24-alt" target="_blank" rel="noopener noreferrer" class="social-pill-link">
+                    <span aria-hidden="true">🐙</span>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://suryapedapudi.web-dev.page" target="_blank" rel="noopener noreferrer" class="social-pill-link">
+                    <span aria-hidden="true">🌐</span>
+                    <span>web-dev.page</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--glass-border); font-size: 0.8rem; color: var(--text-muted);">
+              ⚡ Quick Hotkeys: <kbd style="background: var(--glass-bg-hover); padding: 2px 6px; border-radius: 4px; color: var(--zinc-300);">1</kbd> Who Am I? &nbsp;|&nbsp; <kbd style="background: var(--glass-bg-hover); padding: 2px 6px; border-radius: 4px; color: var(--zinc-300);">2</kbd> Projects &nbsp;|&nbsp; <kbd style="background: var(--glass-bg-hover); padding: 2px 6px; border-radius: 4px; color: var(--zinc-300);">3</kbd> Contact
+            </div>
+          </article>
+
+          <!-- Quick Message Direct Form (Staggered Float 2) -->
+          <aside class="glass-card quick-message-card float-stagger-2">
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; gap: 0.45rem;">
+              <span>⚡</span> Quick Message
+            </h3>
+            
+            <form id="quickMessageForm" novalidate>
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="contact-name" class="form-label"><span>👤</span> YOUR NAME</label>
+                <input type="text" id="contact-name" class="glass-input" placeholder="e.g. Alex Mercer" required />
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="contact-email" class="form-label"><span>✉️</span> YOUR EMAIL</label>
+                <input type="email" id="contact-email" class="glass-input" placeholder="e.g. alex@company.com" required />
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="contact-message" class="form-label"><span>📝</span> MESSAGE</label>
+                <textarea id="contact-message" class="glass-textarea" placeholder="Tell me about your project, idea, or freelance opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Send Message</span>
+                <span aria-hidden="true">⚡</span>
+              </button>
+            </form>
+          </aside>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ISOLATED FULL-SCREEN SMOKED-GLASS RESUME MODAL VIEWER -->
+    <div id="resumeModalOverlay" class="resume-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+      <div class="resume-modal-frame">
+        
+        <!-- Modal Control Header -->
+        <div class="resume-modal-header">
+          <div class="modal-header-meta">
+            <h3 id="resumeModalTitle">📄 Pedapudi Surya Teja — Resume.pdf</h3>
+            <span>Original PDF</span>
+          </div>
+
+          <div class="modal-header-actions">
+            <!-- External Tab Direct PDF Opener with Cache-Buster -->
+            <a href="Pedapudi_Surya_Teja_Resume.pdf?v=20260823" target="_blank" rel="noopener noreferrer" class="modal-action-btn" title="Open original PDF in new tab">
+              <span>↗</span>
+              <span>Open in Tab</span>
+            </a>
+
+            <!-- Direct PDF Download with Cache-Buster -->
+            <a href="Pedapudi_Surya_Teja_Resume.pdf?v=20260823" download="Resume.pdf" class="modal-action-btn modal-action-btn-primary" title="Download official PDF">
+              <span>📥</span>
+              <span>Download PDF</span>
+            </a>
+
+            <!-- Close Button -->
+            <button type="button" class="modal-action-btn" id="closeResumeBtn" aria-label="Close Resume Viewer">
+              <span>✕</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal Body with Smoked Glass PDF Viewer -->
+        <div class="resume-modal-body">
+          <iframe src="Pedapudi_Surya_Teja_Resume.pdf?v=20260823#toolbar=0&navpanes=0" class="resume-viewer-iframe" title="Pedapudi Surya Teja Official Resume PDF"></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="app-footer" role="contentinfo">
+      <div>
+        © 2026 <span class="footer-accent">Pedapudi Surya Teja</span> — AI &amp; Web Developer
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- TOAST NOTIFICATION FOR USER ACTIONS -->
+  <div id="copyToastNotice" class="toast-notice" role="status" aria-live="polite">
+    ✓ Action Completed
+  </div>
+
+  <script src="js/desktop.js"></script>
+</body>
+
+</html>
